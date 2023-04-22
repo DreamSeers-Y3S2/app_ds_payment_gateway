@@ -9,7 +9,7 @@ app.use(express.json());
 app.use("*", cors());
 
 app.get("/", (req, res) => {
-  res.send("Payment API is Running");
+	res.send("Payment API is Running");
 });
 
 app.use("/stripe", paymentRoutes);
