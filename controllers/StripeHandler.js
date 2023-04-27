@@ -9,7 +9,7 @@ const createPaymentIntent = async (req, res) => {
 	try {
 		const payment = await stripe.paymentIntents.create({
 			amount,
-			currency: "LKR",
+			currency: "USD",
 			description: "Hela Ayu Pay",
 			payment_method: id,
 			confirm: true,
