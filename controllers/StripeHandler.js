@@ -3,6 +3,7 @@ const StripeKey =
 const Stripe = require("stripe");
 const stripe = new Stripe(StripeKey);
 
+//create a payment in stripe payment gateway
 const createPaymentIntent = async (req, res) => {
 	let { amount, id } = req.body;
 	try {

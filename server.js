@@ -12,6 +12,7 @@ app.get("/", (req, res) => {
 	res.send("Payment API is Running");
 });
 
+//payment server route
 app.use("/stripe", paymentRoutes);
 
 const PORT = process.env.PORT || 5005;
